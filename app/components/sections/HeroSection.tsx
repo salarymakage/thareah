@@ -11,10 +11,20 @@ export default function HeroSection() {
     // Select a few projects for the collage (excluding Logos)
     const showcaseProjects = projects.filter(p => p.category !== 'Logo').slice(0, 4);
 
+    const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+        e.preventDefault();
+        const element = document.querySelector(href);
+        if (element) {
+            const y = element.getBoundingClientRect().top + window.scrollY - 80;
+            window.scrollTo({ top: y, behavior: 'smooth' });
+            window.history.pushState(null, '', href);
+        }
+    };
+
     return (
         <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 pb-12 lg:pt-0 lg:pb-0">
             {/* Background Elements */}
-            <div className="absolute inset-0 -z-10">
+            <div className="fixed inset-0 -z-10 h-full w-full pointer-events-none">
                 <div className="absolute top-[-20%] right-[-10%] w-[600px] h-[600px] bg-accent/5 rounded-full blur-[100px] opacity-60 animate-pulse" />
                 <div className="absolute bottom-[-10%] left-[-10%] w-[500px] h-[500px] bg-blue-500/5 rounded-full blur-[100px] opacity-50" />
                 <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]" />
@@ -43,26 +53,31 @@ export default function HeroSection() {
                     </motion.div>
 
                     <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-foreground mb-6 leading-[1.1]">
-                        Visual <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-blue-600">Storyteller</span> <br />
-                        & Brand Architect
+                        Designer, <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-blue-600">Developer</span> <br />
+                        & Data Enthusiast
                     </h1>
 
-                    <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-lg leading-relaxed">
-                        Helping forward-thinking companies build memorable identities through minimalist design and strategic branding.
-                    </p>
+                    <div className="mb-8 max-w-2xl">
+                        <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-4">
+                            I create modern visual identities, build responsive web experiences, and develop data-driven solutions.
+                        </p>
+                        <p className="text-sm md:text-base text-muted-foreground/80 font-medium">
+                            Branding • Web Development • Data Science
+                        </p>
+                    </div>
 
                     <div className="flex flex-col sm:flex-row items-center gap-4">
-                        <Link href="#portfolio">
+                        <a href="#portfolio" onClick={(e) => handleScroll(e, '#portfolio')}>
                             <Button size="lg" className="min-w-[170px] group">
-                                View Our Work
+                                View My Work
                                 <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
                             </Button>
-                        </Link>
-                        <Link href="#contact">
+                        </a>
+                        <a href="#contact" onClick={(e) => handleScroll(e, '#contact')}>
                             <Button variant="outline" size="lg" className="min-w-[170px] group">
-                                Let's Talk
+                                Let's Work Together
                             </Button>
-                        </Link>
+                        </a>
                     </div>
                 </motion.div>
             </div>

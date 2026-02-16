@@ -11,19 +11,19 @@ export default function Home() {
         <HeroSection />
       </section>
 
-      <section id="portfolio">
+      <section id="portfolio" className="bg-white relative z-10">
         <PortfolioSection />
       </section>
 
-      <section id="services" className="bg-muted/30">
+      <section id="services" className="bg-slate-50 relative z-10">
         <ServicesSection />
       </section>
 
-      <section id="about">
+      <section id="about" className="bg-white relative z-10">
         <AboutSection />
       </section>
 
-      <section id="contact" className="bg-muted/30">
+      <section id="contact" className="bg-slate-50 relative z-10">
         <ContactSection />
       </section>
     </div>

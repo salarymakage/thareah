@@ -50,18 +50,35 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
                     <div>
                         <h2 className="text-2xl font-bold mb-4">The Challenge</h2>
                         <p className="text-muted-foreground leading-relaxed">
-                            Developing a brand identity that stands out in a crowded market while remaining timeless and adaptable.
-                            The goal was to balance modern aesthetics with functional clarity, ensuring the mark is recognizable across all touchpoints.
+                            {project.challenge}
                         </p>
                     </div>
 
                     <div>
                         <h2 className="text-2xl font-bold mb-4">The Solution</h2>
                         <p className="text-muted-foreground leading-relaxed">
-                            We crafted a bespoke visual system centered around a signature mark that embodies {project.title}&apos;s vision.
-                            The resulting identity system is flexible, scalable, and provides a cohesive experience across print and digital platforms.
+                            {project.solution}
                         </p>
                     </div>
+
+                    {/* Gallery Section */}
+                    {project.galleryImages && project.galleryImages.length > 0 && (
+                        <div className="pt-8">
+                            <h2 className="text-2xl font-bold mb-6">Visual Identity System</h2>
+                            <div className="grid grid-cols-1 gap-8">
+                                {project.galleryImages.map((img, index) => (
+                                    <div key={index} className="relative aspect-video bg-muted/20 rounded-2xl overflow-hidden shadow-sm border border-border/50">
+                                        <Image
+                                            src={img}
+                                            alt={`${project.title} - Visual ${index + 1}`}
+                                            fill
+                                            className="object-contain"
+                                        />
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    )}
                 </div>
 
                 <div className="space-y-8">

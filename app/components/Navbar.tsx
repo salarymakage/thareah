@@ -57,13 +57,22 @@ export default function Navbar() {
         if (element) {
             const y = element.getBoundingClientRect().top + window.scrollY - 80; // Offset for fixed header
             window.scrollTo({ top: y, behavior: 'smooth' });
+            window.history.pushState(null, '', href);
         }
     };
 
     return (
         <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-background/80 backdrop-blur-md h-16 shadow-sm' : 'bg-transparent h-20'}`}>
             <div className="max-w-7xl mx-auto px-6 h-full flex items-center justify-between">
-                <Link href="#home" onClick={(e) => handleClick(e, '#home')} className="flex items-center gap-2 hover:opacity-80 transition-opacity">
+                <Link href="#home" onClick={(e) => handleClick(e, '#home')} className="flex items-center gap-3 hover:opacity-80 transition-opacity">
+                    <div className="relative h-10 w-10">
+                        <Image
+                            src="/images/tmor.svg"
+                            alt="Logo"
+                            fill
+                            className="object-contain"
+                        />
+                    </div>
                     <span className="text-2xl font-bold tracking-tight">thareah<span className="text-accent">.</span></span>
                 </Link>
 
