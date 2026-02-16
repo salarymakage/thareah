@@ -39,11 +39,11 @@ export const projects: Project[] = [
     },
     {
         id: 3,
-        title: 'Cafe Hamony Branding',
+        title: 'Cafe Harmony Branding',
         category: 'Logo',
-        slug: 'cafe-hamony-branding',
-        image: '/images/logo/cafehamony_v2.png',
-        challenge: 'Cafe Hamony required a warm and inviting brand image that would attract coffee lovers and casual diners alike. The goal was to communicate comfort and quality.',
+        slug: 'cafe-harmony-branding',
+        image: '/images/logo/cafeharmony_v2.png',
+        challenge: 'Cafe Harmony required a warm and inviting brand image that would attract coffee lovers and casual diners alike. The goal was to communicate comfort and quality.',
         solution: 'We designed a friendly and approachable logo using soft typography and warm earth tones. The branding extends to packaging and interior signage, creating a cohesive and welcoming atmosphere.'
     },
     {
