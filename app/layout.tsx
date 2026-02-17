@@ -17,6 +17,10 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Thareah | Logo Designer & Brand Strategist",
   description: "Professional logo design and brand identity services for forward-thinking brands.",
+  icons: {
+    icon: "/images/tmor.svg",
+    apple: "/images/tmor.svg",
+  },
 };
 
 export default function RootLayout({
