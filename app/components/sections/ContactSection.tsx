@@ -47,13 +47,7 @@ export default function ContactSection() {
                         <h3 className="text-lg font-semibold mb-2">Phone</h3>
                         <p className="text-muted-foreground">+855 69 260 405</p>
                     </div>
-                    <div>
-                        <h3 className="text-lg font-semibold mb-2">Socials</h3>
-                        <div className="flex flex-col space-y-2">
-                            <a href="https://www.linkedin.com/in/chestharas-tan-2823052a8/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-accent transition-colors">LinkedIn</a>
-                            <a href="https://github.com/salarymakage" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-accent transition-colors">GitHub</a>
-                        </div>
-                    </div>
+
 
                     <div className="pt-6">
                         <a href="https://wa.me/qr/K4IAG3YGFHSTI1" target="_blank" rel="noopener noreferrer">

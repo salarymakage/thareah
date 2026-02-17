@@ -42,23 +42,14 @@ export default function Footer() {
                     <div>
                         <h3 className="font-semibold mb-4">Contact</h3>
                         <ul className="space-y-2 text-sm text-muted-foreground">
-                            <li><a href="mailto:hello@example.com" className="hover:text-accent transition-colors">hello@example.com</a></li>
-                            <li><a href="tel:+1234567890" className="hover:text-accent transition-colors">+1 (234) 567-890</a></li>
+                            <li><a href="mailto:chesthareahtan@gmail.com" className="hover:text-accent transition-colors">chesthareahtan@gmail.com</a></li>
+                            <li><a href="tel:+85569260405" className="hover:text-accent transition-colors">+855 69 260 405</a></li>
                         </ul>
-                    </div>
-
-                    <div>
-                        <h3 className="font-semibold mb-4">Social</h3>
-                        <div className="flex space-x-4">
-                            <a href="#" className="w-10 h-10 rounded-full bg-muted flex items-center justify-center hover:bg-accent hover:text-white transition-all">TW</a>
-                            <a href="#" className="w-10 h-10 rounded-full bg-muted flex items-center justify-center hover:bg-accent hover:text-white transition-all">LI</a>
-                            <a href="#" className="w-10 h-10 rounded-full bg-muted flex items-center justify-center hover:bg-accent hover:text-white transition-all">IG</a>
-                        </div>
                     </div>
                 </div>
 
                 <div className="border-t border-border/50 mt-12 pt-8 text-center text-sm text-muted-foreground">
-                    © {new Date().getFullYear()} Portfolio. All rights reserved.
+                    © {new Date().getFullYear()} Thareah. All rights reserved.
                 </div>
             </div>
         </footer>
