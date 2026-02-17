@@ -151,6 +151,24 @@ export const projects: Project[] = [
         challenge: 'Developing a brand identity that stands out in a crowded market while remaining timeless and adaptable. The goal was to balance modern aesthetics with functional clarity, ensuring the mark is recognizable across all touchpoints.',
         solution: 'We crafted a bespoke visual system centered around a signature mark that embodies Pchum Ben Special\'s vision. The resulting identity system is flexible, scalable, and provides a cohesive experience across print and digital platforms.'
     },
+    {
+        id: 32,
+        title: 'Fresh Drink Promotion',
+        category: 'Poster',
+        slug: 'fresh-drink',
+        image: '/images/poster/freshdrink.png',
+        challenge: 'Developing a brand identity that stands out in a crowded market while remaining timeless and adaptable. The goal was to balance modern aesthetics with functional clarity, ensuring the mark is recognizable across all touchpoints.',
+        solution: 'We crafted a bespoke visual system centered around a signature mark that embodies Fresh Drink Promotion\'s vision. The resulting identity system is flexible, scalable, and provides a cohesive experience across print and digital platforms.'
+    },
+    {
+        id: 33,
+        title: 'King Visuals',
+        category: 'Poster',
+        slug: 'king-visuals',
+        image: '/images/poster/king.png',
+        challenge: 'Developing a brand identity that stands out in a crowded market while remaining timeless and adaptable. The goal was to balance modern aesthetics with functional clarity, ensuring the mark is recognizable across all touchpoints.',
+        solution: 'We crafted a bespoke visual system centered around a signature mark that embodies King Visuals\'s vision. The resulting identity system is flexible, scalable, and provides a cohesive experience across print and digital platforms.'
+    },
 
     // Web Applications
     {
