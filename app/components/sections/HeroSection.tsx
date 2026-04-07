@@ -54,15 +54,15 @@ export default function HeroSection() {
 
                     <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-foreground mb-6 leading-[1.1]">
                         Designer, <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-blue-600">Developer</span> <br />
-                        & Data Enthusiast
+                        & Visual Creator
                     </h1>
 
                     <div className="mb-8 max-w-2xl">
                         <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-4">
-                            I create modern visual identities, build responsive web experiences, and develop data-driven solutions.
+                            I create modern visual identities and build responsive web experiences.
                         </p>
                         <p className="text-sm md:text-base text-muted-foreground/80 font-medium">
-                            Branding • Web Development • Data Science
+                            Branding • Web Development • UI/UX
                         </p>
                     </div>
 

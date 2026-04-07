@@ -8,9 +8,6 @@ import { projects } from '../../data/projects';
 export default function PortfolioSection() {
     const logos = projects.filter(p => p.category === 'Logo');
     const posters = projects.filter(p => p.category === 'Poster');
-    const webApps = projects.filter(p => p.category === 'Web Application');
-    const mobileApps = projects.filter(p => p.category === 'Mobile Application');
-    const dataScience = projects.filter(p => p.category === 'Data Science');
 
     const renderSection = (title: string, items: typeof projects, categorySlug: string) => {
         const displayedItems = items.slice(0, 6);
@@ -49,15 +46,12 @@ export default function PortfolioSection() {
             <div className="text-center mb-16">
                 <h2 className="text-4xl md:text-5xl font-bold mb-6">Selected Works</h2>
                 <p className="text-muted-foreground max-w-2xl mx-auto">
-                    A showcase of creative projects ranging from brand identity to data science.
+                    A showcase of creative design projects ranging from brand identity to poster design.
                 </p>
             </div>
 
             {renderSection('Logo Design', logos, 'logo')}
             {renderSection('Posters', posters, 'poster')}
-            {renderSection('Web Applications', webApps, 'web-application')}
-            {renderSection('Mobile Applications', mobileApps, 'mobile-application')}
-            {renderSection('Data Science', dataScience, 'data-science')}
         </div>
     );
 }

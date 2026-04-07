@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { Palette, Code, Brain } from 'lucide-react';
+import { Palette } from 'lucide-react';
 
 export default function AboutSection() {
     return (
@@ -23,61 +23,53 @@ export default function AboutSection() {
                 <div>
                     <h3 className="text-2xl font-bold mb-4">My Story</h3>
                     <p className="text-muted-foreground mb-4 leading-relaxed">
-                        I’m a Data Science and Engineering student at the Royal University of Phnom Penh with a strong foundation in graphic design and web development.
+                        I’m an engineering student at the Royal University of Phnom Penh with a strong foundation in graphic design and visual communication.
                     </p>
                     <p className="text-muted-foreground mb-4 leading-relaxed">
-                        My journey started in visual design — creating logos, posters, and brand systems — but over time, I became deeply interested in how systems work behind the interface.
+                        My journey started in visual design, creating logos, posters, and brand systems that help businesses communicate clearly and consistently.
                     </p>
                     <p className="text-muted-foreground leading-relaxed">
-                        Today, I focus on building AI-powered solutions, especially in computer vision, OCR, and machine learning. I enjoy combining design thinking with technical problem-solving to create systems that are not only visually clean but structurally intelligent.
+                        Today, I focus on crafting thoughtful design experiences that are visually clean, strategically aligned, and meaningful for real users.
                     </p>
                 </div>
             </div>
 
             <div className="mb-20">
                 <h3 className="text-2xl font-bold mb-8 text-center">Skills & Expertise</h3>
-                <div className="grid md:grid-cols-3 gap-8">
+                <div className="max-w-xl mx-auto">
                     {/* Design */}
-                    <div className="bg-muted/30 p-6 rounded-xl border border-border/50 transition-colors hover:border-accent/50 group">
-                        <div className="mb-4 text-accent">
+                    <div className="bg-muted/30 p-7 rounded-2xl border border-border/50 transition-colors hover:border-accent/50 group">
+                        <div className="mb-5 text-accent">
                             <Palette size={32} />
                         </div>
-                        <h4 className="text-xl font-bold mb-4">Design</h4>
-                        <ul className="space-y-2 text-muted-foreground">
+                        <div className="flex flex-wrap items-center justify-between gap-3 mb-5">
+                            <h4 className="text-xl font-bold">Design</h4>
+                            <span className="text-xs font-semibold px-3 py-1 rounded-full bg-accent/10 text-accent">
+                                Core Focus
+                            </span>
+                        </div>
+
+                        <ul className="grid sm:grid-cols-2 gap-x-8 gap-y-3 text-muted-foreground mb-6">
                             <li>Visual Identity & Logo Design</li>
                             <li>UI/UX Design</li>
                             <li>Design Systems</li>
                             <li>Branding & Digital Graphics</li>
+                            <li>Poster & Campaign Design</li>
+                            <li>Social Media Content Design</li>
+                            <li>Typography & Layout</li>
+                            <li>Color Direction & Style Guides</li>
                         </ul>
-                    </div>
 
-                    {/* Development */}
-                    <div className="bg-muted/30 p-6 rounded-xl border border-border/50 transition-colors hover:border-accent/50 group">
-                        <div className="mb-4 text-accent">
-                            <Code size={32} />
+                        <div className="flex flex-wrap gap-2">
+                            {['Brand Strategy', 'Creative Direction', 'Prototyping', 'Content Design'].map((item) => (
+                                <span
+                                    key={item}
+                                    className="text-xs font-medium px-3 py-1.5 rounded-full border border-border/70 bg-background/70 text-muted-foreground"
+                                >
+                                    {item}
+                                </span>
+                            ))}
                         </div>
-                        <h4 className="text-xl font-bold mb-4">Development</h4>
-                        <ul className="space-y-2 text-muted-foreground">
-                            <li>React / Next.js</li>
-                            <li>Frontend Architecture</li>
-                            <li>API Integration</li>
-                            <li>System Design</li>
-                        </ul>
-                    </div>
-
-                    {/* Data & AI */}
-                    <div className="bg-muted/30 p-6 rounded-xl border border-border/50 transition-colors hover:border-accent/50 group">
-                        <div className="mb-4 text-accent">
-                            <Brain size={32} />
-                        </div>
-                        <h4 className="text-xl font-bold mb-4">Data & AI</h4>
-                        <ul className="space-y-2 text-muted-foreground">
-                            <li>Machine Learning</li>
-                            <li>Computer Vision</li>
-                            <li>OCR Systems</li>
-                            <li>Deep Learning (CNN, Transformers)</li>
-                            <li>Data Analysis & Model Training</li>
-                        </ul>
                     </div>
                 </div>
             </div>
@@ -85,7 +77,7 @@ export default function AboutSection() {
             <div>
                 <h3 className="text-2xl font-bold mb-8 text-center">Tools I Use</h3>
                 <div className="flex flex-wrap justify-center gap-8 opacity-70 grayscale hover:grayscale-0 transition-all duration-500">
-                    {['Figma', 'Adobe Illustrator', 'Photoshop', 'React', 'Next.js', 'Tailwind', 'Python', 'FastAPI'].map((tool) => (
+                    {['Adobe Photoshop', 'Adobe Illustrator', 'After Effects', 'DaVinci Resolve', 'Kdenlive', 'Figma', 'Canva', 'CapCut', 'Alight Motion'].map((tool) => (
                         <div key={tool} className="text-lg font-semibold">{tool}</div>
                     ))}
                 </div>

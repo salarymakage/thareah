@@ -15,24 +15,16 @@ export default function CategoryPage({ params }: CategoryPageProps) {
     const { category } = use(params);
 
     // Decode the category slug to match the project category format
-    // e.g., 'logo' -> 'Logo', 'web-application' -> 'Web Application'
+    // e.g., 'logo' -> 'Logo'
     const decodedCategory = decodeURIComponent(category)
         .split('-')
         .map(word => word.charAt(0).toUpperCase() + word.slice(1))
         .join(' ');
 
-    // Normalize category names for comparison (handle singular/plural if needed, or exact match)
-    // The previous implementation used exact strings like 'Logo', 'Poster', 'Web Application'
-    // Let's try to match loosely or use a map if necessary.
-    // Ideally, we should have a map of slug -> Category Name.
-
     const categoryMap: Record<string, string> = {
         'logo': 'Logo',
         'branding': 'Logo', // fallback/alias
         'poster': 'Poster',
-        'web-application': 'Web Application',
-        'mobile-application': 'Mobile Application',
-        'data-science': 'Data Science'
     };
 
     const targetCategory = categoryMap[category.toLowerCase()] || decodedCategory;

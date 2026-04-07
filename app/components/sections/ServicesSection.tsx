@@ -3,23 +3,13 @@ import ServiceCard from '../ServiceCard';
 const services = [
     {
         title: 'Visual & Brand Design',
-        description: 'Creating modern visual identities, logos, posters, and social media graphics that communicate clearly and professionally.',
-        covers: ['Logo Design', 'Brand Identity', 'Poster & Social Media Design', 'Marketing Graphics']
+        description: 'I craft clear, modern brand visuals including logos, posters, and social media assets that strengthen recognition and trust.',
+        covers: ['Logo Design', 'Brand Identity', 'Poster Design', 'Social Media Graphics']
     },
     {
         title: 'UI/UX Design',
-        description: 'Designing clean, user-focused interfaces for web and mobile with strong visual hierarchy and usability principles.',
-        covers: ['Wireframes & Prototypes', 'App & Website UI Design', 'Design Systems', 'User Flow & Experience Strategy']
-    },
-    {
-        title: 'Web Development',
-        description: 'Building responsive and modern websites using clean code and scalable architecture.',
-        covers: ['Portfolio Websites', 'Business Websites', 'React / Next.js Interfaces', 'Dashboard Systems', 'Frontend + API Integration']
-    },
-    {
-        title: 'Data Science & AI Solutions',
-        description: 'Developing intelligent systems using machine learning and data analysis to solve real-world problems.',
-        covers: ['Machine Learning Models', 'OCR & Computer Vision', 'Deep Learning Projects', 'Data Analysis & Visualization', 'AI System Development']
+        description: 'I design intuitive web and mobile interfaces with strong visual hierarchy, smooth user flows, and practical usability.',
+        covers: ['Wireframes & Prototypes', 'Web & Mobile UI Design', 'Design Systems', 'User Flow Strategy']
     },
 ];
 
@@ -29,7 +19,7 @@ export default function ServicesSection() {
             <div className="text-center mb-16">
                 <h2 className="text-4xl md:text-5xl font-bold mb-6">Services</h2>
                 <p className="text-muted-foreground max-w-2xl mx-auto">
-                    Comprehensive design, development, and data solutions tailored to your needs.
+                    Comprehensive design and development solutions tailored to your needs.
                 </p>
             </div>
 
